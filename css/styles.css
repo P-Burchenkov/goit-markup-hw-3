@@ -32,6 +32,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*  COMMON STYLES */
@@ -190,8 +192,7 @@ body {
 }
 
 .hero-button {
-  padding: 10px 32px;
-  border: 0;
+  padding: 8px 30px;
   border-radius: 4px;
 
   font-family: inherit;
@@ -203,7 +204,7 @@ body {
 
   color: var(--white-color);
   background-color: var(--accent-color);
-  /* border-color: transparent; */
+  border-color: transparent;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -264,15 +265,19 @@ body {
 }
 
 .team-list .title {
+  padding-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
 }
 
 .team-list .text {
+  padding-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -281,7 +286,6 @@ body {
 }
 
 .team-list .item {
-  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--white-color);
@@ -289,17 +293,12 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-member {
-  display: block;
-  margin-bottom: 30px;
-}
-
 /*  FOOTER */
 
 .foot {
-  width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--banner-background-color);
 }
 
@@ -307,19 +306,10 @@ body {
   color: var(--white-color);
 }
 
-.foot .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .foot .logo {
   display: block;
   margin-bottom: 20px;
   margin-right: 0;
-}
-
-.foot .adress {
-  height: 81px;
 }
 
 .adress .item.item:not(:last-child) {
@@ -359,12 +349,9 @@ body {
 }
 
 .button {
-  height: 38px;
-  border: 0;
+  padding: 4px 20px;
   border-radius: 4px;
   border-color: transparent;
-  padding-right: 22px;
-  padding-left: 22px;
 
   font-family: inherit;
   font-weight: 500;
@@ -374,6 +361,7 @@ body {
 
   color: var(--secondary-text-color);
   background-color: var(--secondary-background-color);
+  border-color: transparent;
 }
 
 .button-list .item:not(:last-child) {
@@ -392,6 +380,7 @@ body {
 .work-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .work-list .item {
@@ -399,15 +388,17 @@ body {
   width: 370px;
 }
 
-.work-list .item:nth-last-child(n + 4) {
+/* .work-list .item:nth-last-child(n + 4) {
   margin-bottom: 30px;
 }
 
 .work-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
-}
+} */
 
 .work-list .title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
